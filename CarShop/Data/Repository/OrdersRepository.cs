@@ -18,6 +18,7 @@ namespace CarShop.Data.Repository
         {
             order.orderTime = DateTime.Now;
             appDBContent.Order.Add(order);
+            appDBContent.SaveChanges();
 
             var items = shopCart.listShopItems;
 
